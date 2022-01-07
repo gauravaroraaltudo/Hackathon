@@ -90,6 +90,9 @@
     <Reference Include="Sitecore.Framework.Data.Blobs.Abstractions, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Framework.Data.Blobs.Abstractions.2.0.0\lib\netstandard2.0\Sitecore.Framework.Data.Blobs.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.JavaScriptServices.ViewEngine">
+      <HintPath>..\..\..\..\library\Sitecore.JavaScriptServices.ViewEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=17.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.10.2.0\lib\net48\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -163,8 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="ContextData\ItemUrlContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RenderingExtension\RenderingParamExtension.cs" />
+    <Compile Include="Transformer\CustomLayoutTransformer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\Hackathon.Foundation.SitecoreExtensions.config" />
