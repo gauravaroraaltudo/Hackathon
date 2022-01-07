@@ -5,6 +5,7 @@ This project contains the customizations in the JSS pipelines.
 We have customized the following sections of Layout Service in this project.
 - Rendering Parameters
 - Layout Service Context
+- Route Data
 
 ## Rendering Paramters
 > Hackathon.Foundation.SitecoreExtensions.RenderingExtension.RenderingParamExtension
@@ -15,3 +16,8 @@ By default, Sitecore provides rendering parameters as Key-Value pairs. In classi
 > Hackathon.Foundation.SitecoreExtensions.ContextData.ItemUrlContext
 
 By default, Sitecore provides very few details in Layout service context. We wanted to have the URL of current page in Layout Service. So, we extended it as well. This can serve as a foundation for further optimizations need in Layout Service Context.
+
+## Route Data
+> Hackathon.Foundation.SitecoreExtensions.Transformer.CustomLayoutTransformer
+
+By default, Sitecore provides a lot of data in route section which has performance impact. We have reduce the data send in route which is not required. By doing this the JSON size will be reduced making out solution more effective.
