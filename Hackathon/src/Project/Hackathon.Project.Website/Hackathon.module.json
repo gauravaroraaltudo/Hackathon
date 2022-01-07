@@ -1,0 +1,19 @@
+{
+  "namespace": "IQVIA.Project.DTPRewrite",
+  "items": {
+    "includes": [
+      {
+        "name": "languages",
+        "path": "/sitecore/system/Languages",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "api-key",
+        "path": "/sitecore/system/Settings/Services/API Keys",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+    ]
+  }
+}
