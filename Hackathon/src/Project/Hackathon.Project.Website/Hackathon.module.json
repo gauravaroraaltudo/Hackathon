@@ -61,7 +61,12 @@
         "path": "/sitecore/media library/Hackathon",
         "scope": "itemAndDescendants",
         "allowedPushOperations": "createUpdateAndDelete"
-      }
+      },
+      {
+        "name": "content-tenant",
+        "path": "/sitecore/content/Hackathon",
+        "scope": "singleItem"
+      },
     ]
   }
 }

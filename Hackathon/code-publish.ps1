@@ -16,3 +16,7 @@ If (Test-Path $communityPath)
 
 $msbuildPath = Find-MsBuild
 cmd.exe /c "$msbuildPath" Hackathon.sln /t:Build /restore /m /p:DeployOnBuild=true /p:PublishProfile=FolderProfile /p:RestorePackages=true
+
+cd app.publish
+rm .\Web.config
+cd ..
